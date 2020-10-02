@@ -1,9 +1,15 @@
 <template>
   <v-app>
-    <v-main>
-      <AppHeader/>
-      <router-view />
-    </v-main>
+      <div class="container-body">
+        <AppHeader/>
+        <div class="contain">
+          <router-view />
+        </div>
+        <AppFooter/>
+      </div>
+
+
+
   </v-app>
 </template>
 
@@ -11,10 +17,12 @@
 
 
 import AppHeader from "@/components/layout/AppHeader";
+import AppFooter from "@/components/layout/AppFooter";
 export default {
   name: 'App',
 
   components: {
+    AppFooter,
     AppHeader
 
   },
@@ -27,6 +35,17 @@ export default {
 
 <style lang="scss">
 @import "./styles/variables.scss";
+
+#app{
+
+}
+
+.container-body{
+  display: grid !important;
+  grid-template-rows: inherit ;
+  grid-gap: 20px;
+
+}
 
 .v-application {
   font-family: $body-font-family;

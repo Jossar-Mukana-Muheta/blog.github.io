@@ -3,5 +3,20 @@
 $body-font-family: 'Source Serif Pro', serif;
 $headings: 'Source Serif Pro', serif;
 
-$link-menu-color: #00000099;
+$gray-text: #00000099;
+$gray-light-text:#FFFFFF80;
 $gray-light: #000000061;
+
+
+//Media Query
+
+$breakpoints: (
+        desktop: 769px,
+);
+
+//== Media queries breakpoints
+@mixin desktop {
+  @media screen and  (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
