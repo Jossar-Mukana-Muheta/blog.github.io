@@ -80,7 +80,7 @@ export default {
 }
 
 .v-application a{
-  color:$link-menu-color ;
+  color:$gray-text ;
   text-decoration: none;
 }
 
