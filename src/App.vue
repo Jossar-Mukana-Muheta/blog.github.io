@@ -44,7 +44,7 @@ export default {
 }
 
 .v-application {
-  font-family: $body-font-family;
+  font-family: $body-font;
   text-align: center;
   padding: 3px;
 
