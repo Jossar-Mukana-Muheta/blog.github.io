@@ -36,10 +36,6 @@ export default {
 <style lang="scss">
 @import "./styles/variables.scss";
 
-#app{
-
-}
-
 .container-body{
   display: grid !important;
   grid-template-rows: inherit ;
@@ -70,5 +66,9 @@ body{
 * {
   padding: 0;
   margin: 0;
+}
+
+p{
+  color: $gray-text;
 }
 </style>
