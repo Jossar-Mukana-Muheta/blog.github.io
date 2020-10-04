@@ -62,8 +62,8 @@ export default {
         {name: "Accueil", link: "/"},
         {name: "Bio", link: "/Bio"},
         {name: "Mes Langages", link: "/Langages"},
-        {name: "Mes Outils", link: "/Outils"},
-        {name: "Mes Astuces", link: "/Astuces"},
+        {name: "Portfolio", link: "/Portfolio"},
+        {name: "Blog", link: "/Blog"},
         {name: "Contact", link: "/Contact"}
       ]
     }

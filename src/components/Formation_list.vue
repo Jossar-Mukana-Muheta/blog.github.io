@@ -5,7 +5,7 @@
       <template v-slot="{ hover }">
   <v-card
       class="mx-auto"
-      max-width="300"
+      max-width="350"
       tile
       :elevation="hover ? 24 : 6"
   >
@@ -25,6 +25,7 @@
           <v-list-item-content>
             <v-list-item-title v-text="item.text"></v-list-item-title>
             <v-list-item-subtitle v-text="item.year" color="red"></v-list-item-subtitle>
+            <v-list-item-subtitle v-text="item.description" color="red"></v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list-item-group>
@@ -41,9 +42,9 @@ export default {
   data: () => ({
     item: 1,
     items: [
-      { text: 'OpenCLassRooms', icon: 'mdi-clock', year:"2020" },
-      { text: 'Web Force 3', icon: 'mdi-account',year:"2018" },
-      { text: 'BTS Assurance', icon: 'mdi-flag',year:"2016" },
+      { text: 'OpenCLassRooms', icon: 'mdi-crown', year:"2020", description: "BAC +2 développeur Web Full Stack" },
+      { text: 'Web Force 3', icon: 'mdi-crown',year:"2018",description: "Certification développeur web et mobile" },
+      { text: 'BTS Assurance', icon: 'mdi-crown',year:"2016",description: "" },
     ],
   }),
 }
