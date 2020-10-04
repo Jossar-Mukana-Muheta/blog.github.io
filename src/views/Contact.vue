@@ -2,17 +2,14 @@
   <div class="contact_container">
     <Section_title title="Contact" subtitle="Stay in touch"/>
     <p class="slogan">Tous conseils et suggestions étant un bienfait, n'hésiter pas à me contacter, je suis aussi disponible pour tous types de projets.</p>
-    <div class="main">
-      <div class="main_content">
+    <div class="contact_main">
+      <div class="contact_content">
           <img src="https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80" alt="desktop">
         <Contact_card/>
       </div>
-      <div class="side_content">
-        <h3>Suivez-moi sur les réseaux sociaux.
-        </h3>
+      <div class="contact_side">
         <Social_bar/>
-        <h3 class="article_title">Derniers articles
-        </h3>
+        <Last_article/>
         <Grid_image/>
       </div>
     </div>
@@ -24,9 +21,10 @@ import Section_title from "@/components/Section_title";
 import Social_bar from "@/components/Social_bar";
 import Grid_image from "@/components/Grid_image";
 import Contact_card from "@/components/Contact_card";
+import Last_article from "@/components/Last_article";
 export default {
 name: "Contact",
-  components: {Contact_card, Grid_image, Social_bar, Section_title}
+  components: {Last_article, Contact_card, Grid_image, Social_bar, Section_title}
 }
 </script>
 
@@ -34,7 +32,7 @@ name: "Contact",
 @import "src/styles/variables.scss";
 
 
-.main{
+.contact_main{
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -43,43 +41,12 @@ name: "Contact",
   }
 }
 
-.main_content{
-
-  @include desktop{
-    width: 60%;
-  }
-}
-
-.side_content{
-
-  @include desktop{
-    width: 40%;
-  }
-
-}
-
-.slogan{
-  margin: 50px;
-}
-
-h3{
-  margin-top: 30px;
-
-}
-
-.article_title{
-  @include desktop{
-    text-align: left;
-    margin-left: 20px;
-  }
-}
-
-.main_content{
+.contact_content{
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
-
   @include desktop{
+    width: 60%;
     align-items: center;
   }
 
@@ -91,5 +58,13 @@ h3{
       width: 60%;
     }
   }
+}
+
+.contact_side{
+
+  @include desktop{
+    width: 40%;
+  }
+
 }
 </style>

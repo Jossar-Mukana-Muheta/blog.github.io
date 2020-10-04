@@ -1,7 +1,11 @@
 <template>
-  <div class="container_img">
-    <div v-for="photo in img" :key="photo" class="image">
-      <img :src="photo" alt="photo">
+  <div>
+    <h3 class="article_title">Mes centres d'intêret
+    </h3>
+    <div class="container_img">
+      <div v-for="photo in img" :key="photo" class="image">
+        <img :src="photo" alt="photo">
+      </div>
     </div>
   </div>
 </template>
@@ -57,6 +61,11 @@ name: "Grid_image",
 
     }
   }
+
+h3{
+  text-align: left;
+  margin-left: 20px;
+}
 
   .container_img{
     display: flex;

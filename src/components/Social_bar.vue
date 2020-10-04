@@ -1,5 +1,7 @@
 <template>
   <v-card-text>
+    <h3>Suivez-moi sur les réseaux sociaux.
+    </h3>
   <v-btn
       v-for="icon in icons"
       :key="icon"

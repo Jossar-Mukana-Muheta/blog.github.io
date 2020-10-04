@@ -27,9 +27,11 @@
 
       <v-list-item>
         <v-list-item-icon>
+          <a href="mailto:mukanamj.devpro@gmail.com">
           <v-icon color="#CEABA0">
             mdi-email
           </v-icon>
+          </a>
         </v-list-item-icon>
 
         <v-list-item-content>

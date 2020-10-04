@@ -71,4 +71,12 @@ body{
 p{
   color: $gray-text;
 }
+
+.slogan{
+  margin: 50px;
+}
+
+h3{
+  margin-top: 30px;
+}
 </style>
