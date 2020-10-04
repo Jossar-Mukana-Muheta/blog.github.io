@@ -52,7 +52,7 @@ export default {
 .headline,
 .title,
 .subheading{
-  font-family: $body-font-family !important;
+  font-family: $body-font !important;
 }
 
 
