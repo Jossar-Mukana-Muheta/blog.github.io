@@ -14,6 +14,7 @@
           Je me suis ensuite lancer en Freelance pour mettre en pratique mes compétences<br/>
 
           J'apprends constamment les technologies Web et d'autres sujets liés au design.</p>
+        <Time_list/>
         <Formation_list/>
       </div>
       <div class="bio_side">
@@ -31,8 +32,9 @@ import Social_bar from "@/components/Social_bar";
 import Last_article from "@/components/Last_article";
 import Grid_image from "@/components/Grid_image";
 import Formation_list from "@/components/Formation_list";
+import Time_list from "@/components/Time_list";
 export default {
-  components: {Formation_list, Grid_image, Last_article, Social_bar, Section_title}
+  components: {Time_list, Formation_list, Grid_image, Last_article, Social_bar, Section_title}
 }
 </script>
 
@@ -45,6 +47,7 @@ export default {
   margin-top: 30px;
   @include desktop{
     flex-direction: row;
+    align-items: center;
   }
 }
 
