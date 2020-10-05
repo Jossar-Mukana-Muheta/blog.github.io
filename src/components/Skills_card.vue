@@ -57,7 +57,7 @@ export default {
         {title : "Vue Js", description: ["Vuex","Vue router","Vuetify","","",""], image: "https://www.log2e.com/wp-content/uploads/2019/01/vuejs_tutorial.png"},
         {title : "Node Js", description: ["Express", "Mongoose", "Jsonwebtoken","API rest",""], image: "https://www.surrealcms.com/uploads/nodejs-logo.png"},
         {title : "Front-end", description: ["SASS", "Flexbox", "Responsive Design", "Bootstrap","Webpack"], image: "https://3cthinkers.com/en/wp-content/uploads/2017/03/dynamicpages.jpeg"},
-        {title : "", description: ["GitHub", "Trello", "Firebase", "MongoDB", "MySql"], image: "https://embedwistia-a.akamaihd.net/deliveries/a38d197dbbd618052f512eece506dd41572f77aa.webp?image_crop_resized=960x540"}
+        {title : "", description: ["GitHub", "Trello", "Firebase", "MongoDB", "MySql", "Vs Code", "WebStorm"], image: "https://embedwistia-a.akamaihd.net/deliveries/a38d197dbbd618052f512eece506dd41572f77aa.webp?image_crop_resized=960x540"}
       ]
     }
 }

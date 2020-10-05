@@ -36,7 +36,14 @@ export default {
 
 .home_image_container{
   display: flex;
-  margin: 20px;
+align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include desktop{
+    flex-direction: row;
+  }
+
 
   img{
     width: 40%;
