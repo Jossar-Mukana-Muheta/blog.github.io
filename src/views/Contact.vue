@@ -1,7 +1,7 @@
 <template>
   <div class="contact_container">
     <Section_title title="Contact" subtitle="Stay in touch"/>
-    <p class="slogan">Tous conseils et suggestions étant un bienfait, n'hésiter pas à me contacter, je suis aussi disponible pour tous types de projets.</p>
+    <h2 class="slogan">Tous conseils et suggestions étant un bienfait, n'hésiter pas à me <span class="colored-text">contacter</span>, je suis aussi disponible pour tous types de projets.</h2>
     <div class="contact_main">
       <div class="contact_content">
           <img src="https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80" alt="desktop">
@@ -66,5 +66,9 @@ name: "Contact",
     width: 40%;
   }
 
+}
+
+.colored-text{
+  color: $pink-pastel;
 }
 </style>

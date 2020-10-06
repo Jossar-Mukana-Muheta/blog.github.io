@@ -61,7 +61,7 @@ export default {
       drawerItems : [
         {name: "Accueil", link: "/"},
         {name: "Bio", link: "/Bio"},
-        {name: "Mes Langages", link: "/Langages"},
+        {name: "MES COMPETENCES", link: "/Langages"},
         {name: "Portfolio", link: "/Portfolio"},
         {name: "Blog", link: "/Blog"},
         {name: "Contact", link: "/Contact"}

@@ -1,7 +1,7 @@
 <template>
   <div class="bio_container">
     <Section_title title="A propos de moi ..." subtitle="About Me"/>
-    <p class="slogan">Découvrez ici mon parcours, mes formations ainsi que mes hobbies.</p>
+    <h2 class="slogan">Découvrez ici mon <span class="colored-text">parcours</span>, mes formations ainsi que mes hobbies.</h2>
     <div class="bio_main">
       <div class="bio_content">
         <img src="../assets/profil.jpg" alt="photo-profil">
@@ -62,12 +62,12 @@ export default {
   }
 
   img{
-    width: 50%;
+    width: 30%;
     margin-bottom: 20px;
     border-radius: 20px;
 
     @include desktop{
-      width: 60%;
+      width: 25%;
     }
   }
 }
@@ -78,6 +78,10 @@ export default {
     width: 40%;
   }
 
+}
+
+.colored-text{
+  color: $pink-pastel;
 }
 
 </style>

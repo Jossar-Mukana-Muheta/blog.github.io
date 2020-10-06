@@ -38,9 +38,13 @@ export default {
 
 .container-body{
   display: grid !important;
-  grid-template-rows: inherit ;
-  grid-gap: 20px;
+  grid-auto-rows: 0.2fr 3fr 0.2fr ;
+  grid-gap: 10px;
 
+}
+
+.contain{
+  min-height: 100vh;
 }
 
 .v-application {
