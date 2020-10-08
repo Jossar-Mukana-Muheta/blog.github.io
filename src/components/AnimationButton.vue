@@ -1,41 +1,55 @@
 <template>
+  <div>
   <v-btn
       class="mx-2"
       fab
       dark
-      color="white"
+      :color="backgroundColor"
       elevation="25"
-      href="#accueil"
+      :href="lien"
   >
-    <v-icon color="black" dark>
-      mdi-chevron-double-down
+    <v-icon :color="iconColor" dark>
+      {{ icon }}
     </v-icon>
   </v-btn>
+  </div>
 </template>
 
 <script>
 export default {
-name: "AnimationButton"
+name: "AnimationButton",
+  props:[
+    'backgroundColor',
+      'iconColor',
+      'icon',
+      'lien'
+  ]
 }
 </script>
 
 <style lang='scss' scoped>
-a{
-  margin: 50px;
-  &:hover{
-    animation: scrollDown ease-in-out 2s infinite;
+div{
+  @include desktop{
+    align-self: flex-end;
   }
 }
 
+a{
+  margin: 50px;
+
+    animation: scrollDown  1s infinite alternate;
+
+}
+
 @keyframes scrollDown {
-  10%{
+  0%{
     transform: translateY(10px);
   }
-  60%{
+  /*60%{
     transform: translateY(-10px);
-  }
+  }*/
   100%{
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
 }
 </style>

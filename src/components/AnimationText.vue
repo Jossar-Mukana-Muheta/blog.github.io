@@ -18,6 +18,14 @@ h1,h2,p{
   color: white;
 }
 
+h1{
+
+  @include desktop{
+    font-size: 80px;
+  }
+
+}
+
 .text{
   animation: text-appared 6s 200ms ;
 

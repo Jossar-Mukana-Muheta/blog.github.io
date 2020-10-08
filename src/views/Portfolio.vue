@@ -9,9 +9,10 @@
       <v-col
           v-for="(n,projet) in allProjet"
           :key="projet"
-          class="d-flex  child-flex"
-          cols="6"
+          class="d-flex  "
           md="3"
+          cols="6"
+
       >
         <v-hover v-slot:default="{ hover }">
         <v-img
@@ -66,16 +67,17 @@
         </v-img>
         </v-hover>
       </v-col>
-
     </v-row>
+    <AnimationButton icon="mdi-plus" icon-color="white" background-color="#CEABA0" />
   </div>
 </template>
 
 <script>
 import Section_title from "@/components/Section_title";
+import AnimationButton from "@/components/AnimationButton";
 export default {
 name: "Portfolio",
-  components: {Section_title},
+  components: {AnimationButton, Section_title},
   data:()=>{
   return{
     projets: [
@@ -96,6 +98,8 @@ name: "Portfolio",
 
 <style lang='scss' scoped>
 @import "src/styles/variables";
+
+
 
 h2{
   margin-top: 50px;

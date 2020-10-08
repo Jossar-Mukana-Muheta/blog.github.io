@@ -1,11 +1,15 @@
 <template>
   <div class="home">
     <div class="presentation">
-      <AnimationText/>
-      <AnimationButton/>
-    <AnimationBall/>
+      <div>
+        <AnimationText/>
+        <AnimationBall class="ball"/>
 
+      </div>
+    <ImageHeartbeat class="imagebounce"/>
+      <AnimationButton background-color="white" icon-color="black" icon="mdi-chevron-double-down" lien="#accueil"/>
     </div>
+
     <h1>VueJs || NodeJS <span class="colored-text">Développeur</span> </h1>
     <div class="home_image_container">
       <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="desktop">
@@ -26,9 +30,11 @@ import Social_bar from "@/components/Social_bar";
 import AnimationBall from "@/components/AnimationBall";
 import AnimationButton from "@/components/AnimationButton";
 import AnimationText from "@/components/AnimationText";
+import ImageHeartbeat from "@/components/ImageHeartbeat";
 export default {
   name: 'Home',
   components: {
+    ImageHeartbeat,
     AnimationText,
     AnimationButton,
     AnimationBall,
@@ -46,15 +52,24 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: black;
   margin-top: -49px;
 
+  @include desktop{
+    flex-direction: row;
+  }
 
 }
 
 
+.ball, .imagebounce{
+  display: none;
 
+  @include desktop{
+    display: block;
+  }
+}
 
 
 .home{

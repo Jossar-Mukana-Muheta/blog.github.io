@@ -8,6 +8,7 @@
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
       </ul>
     </div>
   </div>
@@ -40,33 +41,38 @@ li {
   animation: bounce-balls 2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
 
   &:nth-child(1) {
-    background: orange;
+    background: #FF0000;
     animation-delay: .6s
   }
 
   &:nth-child(2) {
-    background: coral;
+    background: #FFA500;
     animation-delay: .7s
   }
 
   &:nth-child(3) {
-    background: darksalmon;
+    background: #ffff00;
     animation-delay: .8s
   }
 
   &:nth-child(4) {
-    background: indianred;
+    background: #008000;
     animation-delay: .6s
   }
 
   &:nth-child(5) {
-    background: lightcoral;
+    background: #0000FF;
     animation-delay: .6s
   }
 
   &:nth-child(6) {
-    background: lightcoral;
+    background: #4b0082;
     animation-delay: .7s
+  }
+
+  &:nth-child(6) {
+    background: #ee82ee;
+    animation-delay: .8s
   }
 }
 @keyframes bounce-balls {
