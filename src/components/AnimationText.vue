@@ -1,7 +1,7 @@
 <template>
   <div class="text">
     <p>Je Suis</p>
-    <h1> DEVELOPPEUR FRONT-END </h1>
+    <h2 class="titre_principal"> DEVELOPPEUR FRONT-END </h2>
     <h2>Je créer des applications web conviviale et moderne</h2>
   </div>
 </template>
@@ -18,7 +18,7 @@ h1,h2,p{
   color: white;
 }
 
-h1{
+.titre_principal{
 
   @include desktop{
     font-size: 80px;

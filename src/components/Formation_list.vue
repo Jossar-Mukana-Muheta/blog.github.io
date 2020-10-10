@@ -59,6 +59,6 @@ export default {
   @import "src/styles/variables.scss";
 
   .formation_container{
-    margin-top: 100px;
+    margin-top: 50px;
   }
 </style>

@@ -68,5 +68,8 @@ name: "Time_list"
 </script>
 
 <style lang='scss' scoped>
-
+.v-card{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 </style>

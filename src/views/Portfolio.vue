@@ -2,17 +2,15 @@
   <div class="container_portfolio">
     <Section_title title="PORTFOLIO" subtitle="Works"/>
     <h2>Découvrez queqlues une de mes <span class="colored-text">réalisations</span></h2>
+    <v-container>
     <v-row
-       class="justify-center"
+      class="flex-wrap"
+
     >
 
       <v-col
           v-for="(n,projet) in allProjet"
           :key="projet"
-          class="d-flex  "
-          md="3"
-          cols="6"
-
       >
         <v-hover v-slot:default="{ hover }">
         <v-img
@@ -26,9 +24,6 @@
             <div
                 v-if="hover"
                 class="hover_div d-flex flex-column  transition-fast-in-fast-out black darken-9 v-card--reveal display-3 white--text"
-
-
-
             >
               <v-card-title>
                 {{ n.title }}
@@ -68,16 +63,16 @@
         </v-hover>
       </v-col>
     </v-row>
-    <AnimationButton icon="mdi-plus" icon-color="white" background-color="#CEABA0" />
+</v-container>
   </div>
 </template>
 
 <script>
 import Section_title from "@/components/Section_title";
-import AnimationButton from "@/components/AnimationButton";
+
 export default {
 name: "Portfolio",
-  components: {AnimationButton, Section_title},
+  components: { Section_title},
   data:()=>{
   return{
     projets: [
@@ -139,6 +134,8 @@ h2{
     width: 47px;
     }
   }
+
+
 
 
 }

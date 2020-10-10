@@ -4,7 +4,7 @@
     <h2 class="slogan">Découvrez ici mon <span class="colored-text">parcours</span>, mes formations ainsi que mes hobbies.</h2>
     <div class="bio_main">
       <div class="bio_content">
-        <img src="../assets/profil.jpg" alt="photo-profil">
+
         <p>
           Bonjour, je m'appelle MUKANA MUHETA jossar<br/>
           Je suis passionnée par les nouvelles technologies et particulièrement tout ce qui touche au développement web et mobile, après avoir travaillé pendant des années dans la gestion de sinistre assurance, j'ai décidé de reprendre en parallèle mes études et de m'auto-former pour faire de ma passion mon métier.<br/>
@@ -14,7 +14,9 @@
           Je me suis ensuite lancer en Freelance pour mettre en pratique mes compétences<br/>
 
           J'apprends constamment les technologies Web et d'autres sujets liés au design.</p>
+        <h3>FORMATION</h3>
         <Time_list/>
+        <h3>SOFT SKILLS</h3>
         <Formation_list/>
       </div>
       <div class="bio_side">
@@ -57,7 +59,7 @@ export default {
   flex-direction: column;
   align-items: center;
   @include desktop{
-    width: 60%;
+    width: 75%;
     align-items: center;
   }
 
@@ -75,7 +77,8 @@ export default {
 .bio_side{
 
   @include desktop{
-    width: 40%;
+    width: 25%;
+    background-color: $gray-light-text;
   }
 
 }
