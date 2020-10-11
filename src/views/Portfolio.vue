@@ -2,19 +2,18 @@
   <div class="container_portfolio">
     <Section_title title="PORTFOLIO" subtitle="Works"/>
     <h2>Découvrez queqlues une de mes <span class="colored-text">réalisations</span></h2>
-    <v-container>
-    <v-row
-      class="flex-wrap"
 
+    <div
+      class="container_card"
     >
 
-      <v-col
+      <div
+          class="card_item"
           v-for="(n,projet) in allProjet"
           :key="projet"
       >
         <v-hover v-slot:default="{ hover }">
         <v-img
-
             :src="n.image"
             :lazy-src="n.image"
             aspect-ratio="1"
@@ -23,7 +22,7 @@
           <v-expand-transition>
             <div
                 v-if="hover"
-                class="hover_div d-flex flex-column  transition-fast-in-fast-out black darken-9 v-card--reveal display-3 white--text"
+                class="hover_div d-flex flex-column  transition-fast-in-fast-out black darken-9 v-card--reveal display-4 white--text"
             >
               <v-card-title>
                 {{ n.title }}
@@ -61,9 +60,9 @@
           </template>
         </v-img>
         </v-hover>
-      </v-col>
-    </v-row>
-</v-container>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -93,7 +92,6 @@ name: "Portfolio",
 
 <style lang='scss' scoped>
 @import "src/styles/variables";
-
 
 
 h2{
@@ -135,8 +133,26 @@ h2{
     }
   }
 
+}
+
+.container_card{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @include desktop{
+
+  }
 
 
-
+  .card_item{
+  width: 40%;
+    margin-bottom: 10px;
+    @include desktop{
+      width: 20%;
+    }
+  }
 }
 </style>

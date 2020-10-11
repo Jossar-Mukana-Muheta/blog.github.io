@@ -38,8 +38,8 @@ export default {
 
 .container-body{
   display: grid !important;
-  grid-auto-rows: 0.2fr 3fr 0.2fr ;
-  grid-gap: 10px;
+  grid-auto-rows: 0.2fr 3fr 0.3fr ;
+  grid-gap: 5px;
 
 }
 

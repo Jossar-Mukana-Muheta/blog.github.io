@@ -27,6 +27,7 @@
     </v-navigation-drawer>
     <v-app-bar
         prominent
+        height="80px"
     >
       <v-app-bar-nav-icon
           class="hidden-md-and-up"
@@ -86,7 +87,8 @@ export default {
 
 button{
   margin-top: 40px;
-
 }
+
+
 
 </style>

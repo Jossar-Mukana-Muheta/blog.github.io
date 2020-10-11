@@ -4,9 +4,8 @@
       <div>
         <AnimationText/>
         <AnimationBall class="ball"/>
-
       </div>
-    <ImageHeartbeat class="imagebounce"/>
+      <ImageHeartbeat class="imagebounce"/>
       <AnimationButton background-color="white" icon-color="black" icon="mdi-chevron-double-down" lien="#accueil"/>
     </div>
 
@@ -48,7 +47,7 @@ export default {
 @import "src/styles/variables";
 
 .presentation{
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

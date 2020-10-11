@@ -59,7 +59,7 @@ export default {
   flex-direction: column;
   align-items: center;
   @include desktop{
-    width: 75%;
+    width: 70%;
     align-items: center;
   }
 
@@ -77,7 +77,7 @@ export default {
 .bio_side{
 
   @include desktop{
-    width: 25%;
+    width: 30%;
     background-color: $gray-light-text;
   }
 

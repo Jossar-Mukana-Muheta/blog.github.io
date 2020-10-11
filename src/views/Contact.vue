@@ -46,7 +46,7 @@ name: "Contact",
   padding: 1.5rem;
   flex-direction: column;
   @include desktop{
-    width: 75%;
+    width: 70%;
     align-items: center;
   }
 
@@ -63,7 +63,7 @@ name: "Contact",
 .contact_side{
 
   @include desktop{
-    width: 25%;
+    width: 30%;
   }
 
 }
