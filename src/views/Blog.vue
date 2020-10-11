@@ -50,10 +50,6 @@ name: "Blog",
     ...mapGetters([
       'getAllArticle'
     ])
-  },
-
-  created(){
-    this.$store.dispatch("addALL")
   }
 }
 

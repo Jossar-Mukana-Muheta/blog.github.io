@@ -29,7 +29,12 @@ export default {
 
   data: () => ({
     //
-  }),
+  })
+,
+
+created(){
+  this.$store.dispatch("addALL")
+}
 };
 </script>
 
