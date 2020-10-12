@@ -14,7 +14,7 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>(+33) 07 60 40 22 82</v-list-item-title>
+          <v-list-item-title><a href="tel:+33760402282">(+33) 07 60 40 22 82</a></v-list-item-title>
           <v-list-item-subtitle>Mobile</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -27,15 +27,15 @@
 
       <v-list-item>
         <v-list-item-icon>
-          <a href="mailto:mukanamj.devpro@gmail.com">
+
           <v-icon color="#CEABA0">
             mdi-email
           </v-icon>
-          </a>
+
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>mukanamj.devpro@gmail.com</v-list-item-title>
+          <v-list-item-title><a href="mailto:mukanamj.devpro@gmail.com">mukanamj.devpro@gmail.com</a></v-list-item-title>
           <v-list-item-subtitle>Professionnel</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>

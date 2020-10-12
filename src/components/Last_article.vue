@@ -1,6 +1,6 @@
 <template>
   <div class="last_articleContainer">
-    <h3 class="article_title">Derniers articles</h3>
+    <h3 class="article_title">Derniers articles de mon blog :</h3>
     <div class="container_article">
       <div >
         <v-container>
@@ -14,21 +14,25 @@
               color="#CEABA0"
               dark
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="d-flex flex-no-wrap justify-space-around">
               <div>
                 <v-card-title
-                    class="headline"
+                    style="word-break: inherit"
                     v-text="item.titre"
                 ></v-card-title>
 
-                <v-card-subtitle v-text="item.titre"></v-card-subtitle>
-
+                <v-card-subtitle v-text="item.categorie"></v-card-subtitle>
+                <v-card-subtitle v-text="item.creer"></v-card-subtitle>
+                <v-btn depressed color="transparent" class="ma-1">
+                  <RouterLink :to="{name: 'Article', params:{ titre: item.id }}">Lien</RouterLink>
+                </v-btn>
               </div>
 
               <v-avatar
                   class="ma-3"
                   size="125"
                   tile
+
               >
                 <v-img :src="item.image"></v-img>
               </v-avatar>

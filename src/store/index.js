@@ -13,7 +13,7 @@ export default new Vuex.Store({
     // Mise à jour du state Article
     GET_ARTICLE(state, data){
       state.Articles.push(
-          {titre: data.titre, texte: data.texte, time: data.time, creer : data.creer, image: data.image, categorie:data.categorie, like: data.like}
+          {titre: data[0].titre, texte: data[0].texte, time: data[0].time, creer : data[0].creer, image: data[0].image, categorie:data[0].categorie, like: data[0].like, id:data[1]}
       )
     }
   },
@@ -21,13 +21,15 @@ export default new Vuex.Store({
     // BDD calls
 
     // Récupération de tous les articles
-    addALL({commit}) {
+    addALL(context) {
       db.collection('articles')
           .get()
           .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
               let data = doc.data();
-              commit('GET_ARTICLE', data)
+              let id = doc.id;
+              let newData = [data,id]
+              context.commit('GET_ARTICLE', newData)
             });
           })
           .catch((error) => {
@@ -39,7 +41,10 @@ export default new Vuex.Store({
     // Getter pour renvoie des articles
 getAllArticle: state => {
   return state.Articles
-}
+},
+    getById: state => (id) => {
+      return state.Articles.find(article => article.id === id)
+    }
   },
   modules: {
   }

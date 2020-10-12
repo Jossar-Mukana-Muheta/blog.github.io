@@ -1,13 +1,11 @@
 <template>
-  <div>
-  <Section_title title="BLOG" subtitle="Suivez mon quotidien de dévelloppeur Web en reconversion" />
     <div class="container_article">
       <div class="article"
-           v-for="(item, key) in getAllArticle"
+           v-for="(item, key) in elt"
            :key="key"
       >
         <div class="left_side">
-          <img :src='item.image' alt="">
+          <img :src='item.image' alt="photo">
           <p>{{item.creer}}</p>
           <p>{{item.time + " minute de lecture"}}</p>
         </div>
@@ -16,39 +14,48 @@
           <h2>{{ item.titre}}</h2>
           <p class="text">{{ item.texte }}</p>
         </div>
-
-
       </div>
     </div>
 
-
-  </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import Section_title from "@/components/Section_title";
+
 
 export default {
-name: "Blog",
-  components: {Section_title},
-  computed:{
-    ...mapGetters([
-      'getAllArticle'
-    ])
 
+
+name: "Article",
+  data(){
+  return{
+    elt : []
   }
+},
+  computed: {
+
+  },
+  methods:{
+    addElt : function (id){
+      return this.elt.push(this.$store.getters['getById'](id))
+    }
+  }
+,
+  created() {
+  this.addElt(this.$route.params.titre)
+  }
+
 }
-
 </script>
-
-
 
 <style lang='scss' scoped>
 @import "src/styles/variables";
 
 .container_article{
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .article{
@@ -91,12 +98,7 @@ name: "Blog",
 
   p{
     text-align: justify;
-    height: 150px;
-    overflow: scroll;
 
-    @include desktop{
-      height: 200px;
-    }
 
   }
 }
@@ -115,5 +117,4 @@ name: "Blog",
     font-size: larger;
   }
 }
-
 </style>
