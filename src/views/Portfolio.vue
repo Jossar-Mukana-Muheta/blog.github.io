@@ -117,15 +117,17 @@ h2{
 
   .v-card__subtitle, .v-card__text, .v-card__title {
     padding: 5px;
+    font-size: x-small;
 
     @include desktop{
       padding: 16px;
+      font-size: large;
     }
   }
 
   .v-btn--fab.v-size--large {
-    height: 44px;
-    width: 47px;
+    height: 22px;
+    width: 25px;
 
     @include desktop{
     height: 44px;

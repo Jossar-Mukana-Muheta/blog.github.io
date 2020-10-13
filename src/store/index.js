@@ -42,8 +42,14 @@ export default new Vuex.Store({
 getAllArticle: state => {
   return state.Articles
 },
+    // Récuperer article par id
     getById: state => (id) => {
       return state.Articles.find(article => article.id === id)
+    },
+
+    // Récuperer article par catégorie
+    getByCategorie: state => (categorie) =>{
+      return state.Articles.find(article => article.categorie === categorie)
     }
   },
   modules: {

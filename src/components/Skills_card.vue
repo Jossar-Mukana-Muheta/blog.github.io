@@ -7,8 +7,7 @@
       <template v-slot="{ hover }">
   <v-card
 
-      max-width="400"
-
+      width="400"
       :class="`elevation-${hover ? 24 : 6}`"
       class="mx-auto  transition-swing"
   >
@@ -16,6 +15,8 @@
         class="white--text align-end"
         height="200px"
         :src="card.image"
+        cover
+        color="black"
     >
       <v-card-title>{{ card.title }}</v-card-title>
     </v-img>
@@ -28,14 +29,7 @@
 
 
 
-    <v-card-actions>
-      <v-btn
-          color="orange"
-          text
-      >
-        Portfolio
-      </v-btn>
-    </v-card-actions>
+
   </v-card>
       </template>
     </v-hover>
@@ -55,13 +49,19 @@ export default {
       choicefront:false,
       choiceback: false,
       skills : [
+        {title : "JavaScript", description: ["Manipulation et modification du DOM", "Gestion des événements"," Communication avec une API"," Gérer du code asynchrone"," Gestion des requêtes http, requête url, local Storage"], image: "https://miro.medium.com/max/3600/1*6ahbWjp_g9hqhaTDSJOL1Q.png"},
         {title : "Vue Js", description: ["Vuex","Vue router","Vuetify","","",""], image: "https://www.log2e.com/wp-content/uploads/2019/01/vuejs_tutorial.png"},
-        {title : "Front-end", description: ["SASS", "Flexbox", "Responsive Design", "Bootstrap","Webpack"], image: "https://3cthinkers.com/en/wp-content/uploads/2017/03/dynamicpages.jpeg"},
+        {title : "HTML 5", description: [" Assurer la conformité d'une page web aux standards HTML"," Intégrer du contenu conformément à une maquette"," Adapter l'affichage d'un site web (responsive, mobile first)","Définir la structure d'une page web à partir d'une maquette","",""], image: "https://www.mathieuchartier.com/wp-content/uploads/html5.jpeg"},
+        {title : "CSS 3", description: ["Mettre en œuvre des effets CSS graphiques avancés"," Assurer la cohérence graphique d'un site web"," Utiliser des animation CSS avancé (transition, keyframes)"," Utilisation de CSS grid et de flexbox","Materializecss","Bootstrapp"], image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2uNH2fAJOW7P1q6aPj4kgLim98YMQjQLWzg&usqp=CAU"},
+        {title : "Sass", description: ["Utilisation du pattern 7-1", " Utilisation des mixins, variable"], image: "https://www.pierre-giraud.com/wp-content/uploads/2019/09/sass-cours-logo.jpg"},
+        {title : "SEO", description: ["Bonne pratique pour amélioration référencement naturel", " Assurer l'accessibilité d'un site web", "Écrire un code HTML et CSS maintenable","Optimiser la taille et la vitesse d’un site web","Faire un audit et optimiser le référencement d'un site web","Améliorer la crawabilité"], image: "https://www.pme-web.com/wp-content/uploads/bfi_thumb/Referencement-Google-Page-Facebook-n5p5qxo2ng5qb9hvf4czm0g5w8qwuadn46rpoihkpk.png"},
+        {title : "Front-end", description: ["Flexbox", "Responsive Design", "Bootstrap","Webpack"], image: "https://d22wsyl1zemnyu.cloudfront.net/images/frontendfront-logo-share.png"}
 
       ],
       backEnd : [
-        {title : "Node Js", description: ["Express", "Mongoose", "Jsonwebtoken","API rest",""], image: "https://www.surrealcms.com/uploads/nodejs-logo.png"},
-        {title : "", description: ["GitHub", "Trello", "Firebase", "MongoDB", "MySql", "Vs Code", "WebStorm"], image: "https://embedwistia-a.akamaihd.net/deliveries/a38d197dbbd618052f512eece506dd41572f77aa.webp?image_crop_resized=960x540"}
+        {title : "Node Js", description: ["Création d’un serveur Node avec Express", "Création d’une API en respectant le RGPD et les standards OWASP", "Création de routes en suivant les spécifications","Implémenter le CRUD (create, Read, update, delete)",""], image: "https://www.surrealcms.com/uploads/nodejs-logo.png"},
+        {title : "Base de donées", description: ["MongoDB", "Firebase", "MySql","AWS"], image: "https://www.kindpng.com/picc/m/218-2183666_clip-art-database-logo-database-cloud-hd-png.png"},
+        {title : "", description: ["GitHub", "Trello", "Vs Code", "WebStorm"], image: "https://embedwistia-a.akamaihd.net/deliveries/a38d197dbbd618052f512eece506dd41572f77aa.webp?image_crop_resized=960x540"}
       ]
     }
 },
