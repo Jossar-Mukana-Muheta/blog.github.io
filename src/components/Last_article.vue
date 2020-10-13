@@ -24,7 +24,7 @@
                 <v-card-subtitle v-text="item.categorie"></v-card-subtitle>
                 <v-card-subtitle v-text="item.creer"></v-card-subtitle>
                 <v-btn depressed color="transparent" class="ma-1">
-                  <RouterLink :to="{name: 'Article', params:{ titre: item.id }}">Lien</RouterLink>
+                  <RouterLink :to="{name: 'Article', params:{ titre: item.id }}">lire</RouterLink>
                 </v-btn>
               </div>
 
