@@ -1,6 +1,6 @@
 <template>
 <div >
-  <img class="heartbeat" src="../assets/iphone-transparence.png" alt="iphone">
+  <img class="heartbeat" src="../assets/imac2.jpg" alt="iphone">
 </div>
 </template>
 
@@ -11,6 +11,15 @@ name: "ImageHeartbeat"
 </script>
 
 <style lang='scss' scoped>
+
+img{
+  height: 150px;
+
+  @include desktop{
+    height: 300px;
+  }
+
+}
 
 .heartbeat {
   animation: heartbeat 1s infinite alternate;
