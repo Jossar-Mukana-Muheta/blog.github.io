@@ -1,9 +1,9 @@
 <template>
   <v-card
-      class="mx-auto"
-      max-width="400"
+      class="mx-auto ml-0"
+      width="400"
   >
-    <v-card-text class="py-0">
+    <v-card-text class="py-0 ma-0">
       <v-timeline
           align-top
           dense
@@ -19,7 +19,7 @@
             <v-col>
               <strong>OpenClassRooms</strong>
               <div class="caption">
-                BAC +2 développeur Web Full Stack
+                BAC +2 développeur Web Full Stack Javascript
               </div>
             </v-col>
           </v-row>

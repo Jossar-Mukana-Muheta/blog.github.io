@@ -83,7 +83,7 @@ p{
 }
 
 .slogan{
-  margin: 50px;
+  margin-top: 50px;
 }
 
 h3{

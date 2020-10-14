@@ -62,9 +62,9 @@ name: "Grid_image",
     }
   }
 
-h3{
-  text-align: left;
-  margin-left: 20px;
+p,h1,h2,h3{
+  text-align: start;
+  padding-left: 16px;
 }
 
   .container_img{

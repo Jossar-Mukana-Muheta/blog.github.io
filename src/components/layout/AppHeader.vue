@@ -78,6 +78,10 @@ export default {
 
 .name{
   font-family: 'Permanent Marker', cursive;
+  padding: 0px;
+  @include desktop{
+
+  }
 }
 
 .v-application a{

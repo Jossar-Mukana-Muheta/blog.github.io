@@ -7,7 +7,8 @@
       <div class="left_side">
         <img :src='item.image' alt="">
         <p>{{item.creer}}</p>
-        <p>{{item.time + " minute de lecture"}}</p>
+          <p v-if="item.time <= 1">{{ item.time + " minute de lecture"}}</p>
+          <p v-else>{{ item.time + " minutes de lecture"}}</p>
       </div>
       <div class="right_side">
         <span class="categorie">{{item.categorie}}</span>
@@ -24,7 +25,7 @@
 export default {
 name: "ArticleBlog",
   props: {
-    article : Object
+    article : Array
   }
 }
 
@@ -41,6 +42,7 @@ name: "ArticleBlog",
   display: flex;
   flex-direction: column;
   padding: 10px;
+  align-items: start;
   border-bottom: gray 1px solid;
 
   @include desktop{
@@ -60,7 +62,7 @@ name: "ArticleBlog",
 .left_side{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 
 
   p{
@@ -70,10 +72,14 @@ name: "ArticleBlog",
 }
 
 .right_side{
-  margin-left: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: start;
+
+  @include desktop{
+    margin-left: 10px;
+  }
 
   p{
     text-align: justify;
@@ -83,8 +89,9 @@ name: "ArticleBlog",
     @include desktop{
       height: 200px;
     }
-
   }
+
+
 }
 
 .categorie{
@@ -100,6 +107,13 @@ name: "ArticleBlog",
     font-weight: bold;
     font-size: larger;
   }
+}
+h2{
+  margin-bottom: 0.5em;
+}
+
+span{
+  margin: 0px;
 }
 
 </style>

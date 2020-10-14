@@ -99,4 +99,9 @@ name: "Last_article",
   img{
     height: 20px;
   }
+
+p,h1,h2,h3{
+  text-align: start;
+  padding-left: 16px;
+}
 </style>

@@ -1,17 +1,20 @@
 <template>
-  <v-card-text>
+  <v-card-text class="pl-0">
     <h3>Suivez-moi sur les réseaux sociaux.
     </h3>
-  <v-btn
-      v-for="(icon,key) in icons"
-      :key="key"
-      class="mx-2 black--text"
-      :href="icon.lien"
-      target="_blank"
-      icon
-  >
-    <v-icon size="14px">{{ icon.social }}</v-icon>
-  </v-btn>
+    <div class="button_container">
+      <v-btn
+          v-for="(icon,key) in icons"
+          :key="key"
+          class="mx-2 black--text"
+          :href="icon.lien"
+          target="_blank"
+          icon
+      >
+        <v-icon size="14px">{{ icon.social }}</v-icon>
+      </v-btn>
+    </div>
+
   </v-card-text>
 </template>
 
@@ -33,5 +36,17 @@ name: "Social_bar",
 </script>
 
 <style scoped>
+
+p,h1,h2,h3{
+  text-align: start;
+  padding-left: 16px;
+}
+h3{
+  margin-bottom: 0.5em;
+}
+
+.button_container{
+  text-align: start;
+}
 
 </style>

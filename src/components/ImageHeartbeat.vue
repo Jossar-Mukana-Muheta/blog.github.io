@@ -12,6 +12,11 @@ name: "ImageHeartbeat"
 
 <style lang='scss' scoped>
 
+div{
+  background-color: $light-black;
+  padding-bottom: 8px;
+}
+
 img{
   height: 150px;
 

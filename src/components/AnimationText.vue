@@ -14,20 +14,24 @@ name: "AnimationText"
 
 <style lang='scss' scoped>
 
-h1,h2,p{
+p,h1,h2,h3{
   color: white;
+  text-align: start;
+  padding-left: 16px;
+
 }
 
 .titre_principal{
 
   @include desktop{
-    font-size: 80px;
+    font-size: 60px;
   }
 
 }
 
 .text{
   animation: text-appared 6s 200ms ;
+  margin-top: 40px;
 
 }
 

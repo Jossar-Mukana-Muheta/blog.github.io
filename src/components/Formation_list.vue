@@ -9,7 +9,7 @@
       tile
       :elevation="hover ? 24 : 6"
   >
-    <v-list min-width="300" dense>
+    <v-list min-width="400" dense>
       <v-subheader >SOFT SKILLS</v-subheader>
       <div class="container_skills">
       <v-list-item-group
