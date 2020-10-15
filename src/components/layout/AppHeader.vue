@@ -28,6 +28,9 @@
     <v-app-bar
         prominent
         height="80px"
+
+
+
     >
       <v-app-bar-nav-icon
           class="hidden-md-and-up"
@@ -78,10 +81,19 @@ export default {
 
 .name{
   font-family: 'Permanent Marker', cursive;
-  padding: 0px;
-  @include desktop{
+  padding: 0px !important;
+}
 
+header{
+  padding-left: 16px;
+  @include desktop{
+    padding-left: 15%;
   }
+
+}
+
+.v-toolbar__content{
+  padding: 4px 0px !important;
 }
 
 .v-application a{

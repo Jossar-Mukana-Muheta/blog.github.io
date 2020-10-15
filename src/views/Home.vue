@@ -5,35 +5,24 @@
       <AnimationBall class="ball"/>
     </div>
     <div class="presentation">
-      <div>
         <AnimationText/>
-      </div>
       <ImageHeartbeat class="imagebounce"/>
       <AnimationButton background-color="white" icon-color="black" icon="mdi-chevron-double-down" lien="#accueil"/>
     </div>
-
-    <h1>VueJs || NodeJS <span class="colored-text">Développeur</span> </h1>
-    <div class="home_image_container">
-    </div>
-    <h2 id="accueil">Hello, je suis <span class="colored-text">Jossar</span></h2>
-    <p>Jeune développeur web spécialisé en <span class="colored-text">Vue JS et Node JS</span> <br/> Vous découvrirez ici ma passion pour le développement web et différents articles de mon <RouterLink to="/Blog">blog</RouterLink> qui vous permettront à vous aussi de découvrir, apprendre et connaître mes compétences à travers  <router-link to="/Portfolio">mes réalisations</router-link>. </p>
-    <Social_bar/>
+<div class="contenu">
+  <h1><span class="colored-text">Développeur</span> Front-end Vue Js || Paris - France </h1>
+  <div class="home_image_container">
+  </div>
+  <h2 id="accueil">Hello, je suis <span class="colored-text">Jossar</span></h2>
+  <p>Développeur web front-end spécialisé en <span class="colored-text">Vue JS </span> <br/> Vous découvrirez ici ma passion pour le développement web et différents articles de mon <RouterLink to="/Blog">blog</RouterLink> qui vous permettront à vous aussi de découvrir, apprendre et connaître mes compétences à travers  <router-link to="/Portfolio">mes réalisations</router-link>. </p>
+  <Social_bar/>
+</div>
   </div>
 </template>
 
 <script>
 
 // @ is an alias to /src
-
-  /*setTimeout(function(){
-    document.getElementById("loader-wrapper").style.opacity="0";
-    document.getElementById("loader-wrapper").style.zIndex="-2"
-  }, 3000);*/
-
-
-
-
-
 import Social_bar from "@/components/Social_bar";
 import AnimationBall from "@/components/AnimationBall";
 import AnimationButton from "@/components/AnimationButton";
@@ -119,6 +108,17 @@ export default {
   }
 }
 
+.contenu{
+
+  padding-left: 16px;
+
+  @include desktop{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+}
+
 .home{
   margin-top: 40px;
 }
@@ -157,7 +157,7 @@ h2{
 
 p,h1,h2,h3{
   text-align: start;
-  padding-left: 16px;
+
 
   }
 p{

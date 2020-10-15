@@ -31,6 +31,13 @@ name: "Contact",
 <style lang="scss" scoped>
 @import "src/styles/variables.scss";
 
+p,h1,h2,h3{
+  text-align: start;
+  padding-left: 16px;
+  @include desktop{
+    padding-left: 15%;
+  }
+}
 
 .contact_main{
   display: flex;

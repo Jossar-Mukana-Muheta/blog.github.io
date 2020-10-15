@@ -103,5 +103,8 @@ name: "Last_article",
 p,h1,h2,h3{
   text-align: start;
   padding-left: 16px;
+  @include desktop{
+    padding-left: 0px;
+  }
 }
 </style>

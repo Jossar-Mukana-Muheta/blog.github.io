@@ -14,10 +14,19 @@ name: "AnimationText"
 
 <style lang='scss' scoped>
 
+.text{
+
+  padding-left: 16px;
+  @include desktop{
+    padding-left: 15%;
+  }
+
+}
+
 p,h1,h2,h3{
   color: white;
   text-align: start;
-  padding-left: 16px;
+
 
 }
 

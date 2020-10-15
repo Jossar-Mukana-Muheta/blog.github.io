@@ -36,25 +36,35 @@ name: "ArticleBlog",
 
 .container_article{
   margin-top: 50px;
+
+  @include desktop{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 }
 
 .article{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  margin-bottom: 20px;
   align-items: start;
   border-bottom: gray 1px solid;
 
   @include desktop{
     flex-direction: row;
     display: flex;
-    margin: 20px;
-    width: 90vw;
+
+
   }
 
   img{
     height: 200px;
-    width: 250px;
+    width: 100%;
+    @include desktop{
+      width: 250px;
+    }
+
   }
 
 }
@@ -77,6 +87,7 @@ name: "ArticleBlog",
   flex-direction: column;
   align-items: start;
 
+
   @include desktop{
     margin-left: 10px;
   }
@@ -87,7 +98,7 @@ name: "ArticleBlog",
     overflow: scroll;
 
     @include desktop{
-      height: 200px;
+      max-height: 400px;
     }
   }
 

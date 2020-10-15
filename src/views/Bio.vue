@@ -1,6 +1,9 @@
 <template>
   <div class="bio_container">
     <Section_title title="A propos de moi ..." subtitle="About Me"/>
+    <div class="contenu">
+
+    </div>
     <h2 class="slogan">Découvrez ici mon <span class="colored-text">parcours</span>, mes formations ainsi que mes hobbies.</h2>
     <div class="bio_main">
       <div class="bio_content">
@@ -48,14 +51,22 @@ export default {
   margin-top: 30px;
   @include desktop{
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
   }
 }
 p,h1,h2,h3{
   text-align: start;
   padding-left: 16px;
-
+  @include desktop{
+padding-left: 0px;
+  }
 }
+h2{
+  @include desktop{
+    padding-left: 15%;
+  }
+}
+
 
 p{
 
@@ -72,6 +83,7 @@ p{
   @include desktop{
     width: 70%;
     align-items: start;
+    padding-left: 15%;
 
   }
 

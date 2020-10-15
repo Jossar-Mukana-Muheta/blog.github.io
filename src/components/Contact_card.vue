@@ -3,6 +3,7 @@
   <v-card
       max-width="375"
       class="mx-auto"
+      style="text-align: left"
   >
 
     <v-list two-line>

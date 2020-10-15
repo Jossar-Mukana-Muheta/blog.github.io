@@ -65,6 +65,9 @@ name: "Grid_image",
 p,h1,h2,h3{
   text-align: start;
   padding-left: 16px;
+  @include desktop{
+    padding-left: 0px;
+  }
 }
 
   .container_img{
