@@ -4,14 +4,15 @@
     <v-hover>
       <template v-slot="{ hover }">
   <v-card
-      class="mx-auto"
+      class="mx-auto card "
       max-width="500"
       tile
       :elevation="hover ? 24 : 6"
+
   >
     <v-list min-width="400" dense>
       <v-subheader >SOFT SKILLS</v-subheader>
-      <div class="container_skills">
+      <div class="container_zero">
       <v-list-item-group
           v-model="item"
           color="primary"
@@ -20,6 +21,8 @@
         <v-list-item
             v-for="(item, i) in items"
             :key="i"
+            class="container_liste"
+
         >
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
@@ -61,4 +64,15 @@ export default {
   .formation_container{
     margin-top: 50px;
   }
+
+  .container_zero{
+
+    transition: all 4s ease-in-out ;
+
+    :hover  .container_liste{
+      color: $pink-pastel;
+    }
+  }
+
+
 </style>

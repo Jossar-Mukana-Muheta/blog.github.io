@@ -5,11 +5,11 @@
         v-for="(card,item) in selectedSkills" :key="item"
     >
       <template v-slot="{ hover }">
-  <v-card
 
+  <v-card
       width="400"
       :class="`elevation-${hover ? 24 : 6}`"
-      class="mx-auto  transition-swing"
+      class="mx-auto  transition-swing texteElement"
   >
     <v-img
         class="white--text align-end"
@@ -31,6 +31,7 @@
 
 
   </v-card>
+
       </template>
     </v-hover>
   </div>
@@ -97,11 +98,14 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
 
+
 }
 
 .v-card{
   margin-top: 20px;
   margin-bottom: 20px;
+
+
 }
 
 h2{
@@ -111,5 +115,15 @@ h2{
 
 .colored-text{
   color: $pink-pastel;
+}
+
+.texteElement {
+  @include desktop {
+    transition: all 3s ease-in-out;
+    &:hover {
+
+      transform: translate(10%);
+    }
+  }
 }
 </style>

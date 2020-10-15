@@ -3,7 +3,7 @@
       class="mx-auto ml-0"
       width="400"
   >
-    <v-card-text class="py-0 ma-0">
+    <v-card-text class="py-0 ma-0 texteElement">
       <v-timeline
           align-top
           dense
@@ -71,5 +71,14 @@ name: "Time_list"
 .v-card{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.texteElement{
+  @include desktop{
+    transition: all 3s ease-in-out;
+    &:hover{
+      transform: translate(50%);
+    }
+  }
 }
 </style>
