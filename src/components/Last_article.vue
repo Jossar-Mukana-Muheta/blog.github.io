@@ -15,7 +15,7 @@
               dark
           >
             <div class="d-flex flex-no-wrap justify-space-around">
-              <div>
+              <div style="text-align: start; width: 100%">
                 <v-card-title
                     style="word-break: inherit"
                     v-text="item.titre"

@@ -52,28 +52,35 @@ name: "Article",
 
 .container_article{
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  @include desktop{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 }
 
 .article{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  margin-bottom: 20px;
+  align-items: start;
   border-bottom: gray 1px solid;
 
   @include desktop{
     flex-direction: row;
     display: flex;
-    margin: 20px;
-    width: 90vw;
+
+
   }
 
   img{
     height: 200px;
-    width: 250px;
+    width: 100%;
+    @include desktop{
+      width: 250px;
+    }
+
   }
 
 }
@@ -81,7 +88,7 @@ name: "Article",
 .left_side{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 
 
   p{
@@ -91,16 +98,27 @@ name: "Article",
 }
 
 .right_side{
-  margin-left: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: start;
 
+
+  @include desktop{
+    margin-left: 10px;
+  }
+
   p{
     text-align: justify;
+    height: 150px;
+    overflow: scroll;
 
-
+    @include desktop{
+      max-height: 400px;
+    }
   }
+
+
 }
 
 .categorie{
@@ -117,4 +135,12 @@ name: "Article",
     font-size: larger;
   }
 }
+h2{
+  margin-bottom: 0.5em;
+}
+
+span{
+  margin: 0px;
+}
+
 </style>
