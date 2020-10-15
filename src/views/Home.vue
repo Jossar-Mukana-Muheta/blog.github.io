@@ -24,13 +24,13 @@
 <script>
 
 // @ is an alias to /src
-window.onload = () =>{
-  setTimeout(function(){
+
+  /*setTimeout(function(){
     document.getElementById("loader-wrapper").style.opacity="0";
     document.getElementById("loader-wrapper").style.zIndex="-2"
-  }, 3000);
+  }, 3000);*/
 
-};
+
 
 
 
@@ -48,6 +48,12 @@ export default {
     AnimationBall,
     Social_bar
 
+  },
+  created() {
+    setTimeout(function(){
+      document.getElementById("loader-wrapper").style.opacity="0";
+      document.getElementById("loader-wrapper").style.zIndex="-2"
+    }, 3000);
   }
 }
 </script>
@@ -154,6 +160,11 @@ p,h1,h2,h3{
   padding-left: 16px;
 
   }
+p{
 
+  @include desktop{
+    padding-right: 600px;
+  }
+}
 
 </style>

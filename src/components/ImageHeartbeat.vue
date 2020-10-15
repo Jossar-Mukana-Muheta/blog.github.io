@@ -27,7 +27,7 @@ img{
 }
 
 .heartbeat {
-  animation: heartbeat 1s infinite alternate;
+  animation: heartbeat 2s infinite alternate;
 }
 
 @keyframes heartbeat {
